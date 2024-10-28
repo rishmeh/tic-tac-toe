@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #8E4162;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 58px;
+}
+
+.container{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+}
+
+.game{
+    display: flex;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 16px rgba(0,0,0,0.3);
+    background-color: #B4C4AE;
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+}
+
+.resetbtn{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #2E282A;
+    color: #EDB88B;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 16px rgba(0,0,0,0.3);
+}
+
+.playAgain{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #2E282A;
+    color: #EDB88B;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 16px rgba(0,0,0,0.3);
+}
+
+.won{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hide{
+    display: none;
+}
+
+input{
+    border: solid 1px rgba(0,0,0,0.5);
+    background-color: transparent;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: white;
+}
+
+.circlex{
+    width: 200vmax;
+    height: 200vmax;
+    border-radius: 50%;
+    
+    position: absolute;
+    z-index: -999;
+}
+
+.circleo{
+    width: 250vmax;
+    height: 250vmax;
+    border-radius: 50%;
+    
+    position: absolute;
+    z-index: -999;
+}
+
+
+.expandx {
+    animation: expand 1s ease-out forwards;
+    background-color: #49567B;
+}
+
+.expando {
+    animation: expand 1s ease-out forwards;
+    background-color: rgb(187, 63, 63);
+}
+
+@keyframes expand {
+    from {
+        transform: scale(0);
+    }
+    to {
+        border-radius: 0%;
+        transform: scale(1);
+    }
+}
+
